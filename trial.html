@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow with Descriptions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+</style>
+<body>
+    <div class="slideshow-container">
+        <!-- Slides -->
+        <div class="slide fade">
+            <img src="./picture/building.jpg" alt="Image 1">
+            <div class="text">
+                <h2>Title 1</h2>
+                <p>This is the description for image 1.</p>
+                <p>Here are two sentences explaining the picture further.</p>
+            </div>
+        </div>
+        
+        <div class="slide fade">
+            <img src="./picture/yehey.jpg" alt="Image 2">
+            <div class="text">
+                <h2>Title 2</h2>
+                <p>This is the description for image 2.</p>
+                <p>Here are two sentences explaining the picture further.</p>
+            </div>
+        </div>
+        
+        <div class="slide fade">
+            <img src="./picture/family.jpg" alt="Image 3">
+            <div class="text">
+                <h2>Title 3</h2>
+                <p>This is the description for image 3.</p>
+                <p>Here are two sentences explaining the picture further.</p>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <img src="picture/fight.jpg" alt="Image 4">
+            <div class="text">
+                <h2>Title 4</h2>
+                <p>This is the description for image 4.</p>
+                <p>Here are two sentences explaining the picture further.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
